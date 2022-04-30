@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DB01ModelStoreContainer" CdmEntityContainer="DB01Entities">
+    <EntitySetMapping Name="Ders">
+      <EntityTypeMapping TypeName="DB01Model.Ders">
+        <MappingFragment StoreEntitySet="Ders">
+          <ScalarProperty Name="dersId" ColumnName="dersId" />
+          <ScalarProperty Name="dersKodu" ColumnName="dersKodu" />
+          <ScalarProperty Name="dersAdi" ColumnName="dersAdi" />
+          <ScalarProperty Name="dersKredi" ColumnName="dersKredi" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Kayit">
+      <EntityTypeMapping TypeName="DB01Model.Kayit">
+        <MappingFragment StoreEntitySet="Kayit">
+          <ScalarProperty Name="kayitId" ColumnName="kayitId" />
+          <ScalarProperty Name="kayitDersId" ColumnName="kayitDersId" />
+          <ScalarProperty Name="kayitOgrId" ColumnName="kayitOgrId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Ogrenci">
+      <EntityTypeMapping TypeName="DB01Model.Ogrenci">
+        <MappingFragment StoreEntitySet="Ogrenci">
+          <ScalarProperty Name="ogrId" ColumnName="ogrId" />
+          <ScalarProperty Name="ogrNo" ColumnName="ogrNo" />
+          <ScalarProperty Name="ogrAdsoyad" ColumnName="ogrAdsoyad" />
+          <ScalarProperty Name="ogrYas" ColumnName="ogrYas" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
